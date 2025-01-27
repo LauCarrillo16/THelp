@@ -1,0 +1,227 @@
+body {
+    background-color: #e0efff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.inicio {
+    text-align: center;
+    background-color: #80bdff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 2rem;
+    transition: transform 0.2s;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+.circle-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.tituloInicio {
+    padding-bottom: 3rem;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.back-to-home {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.back-to-home a {
+    font-size: 0.9rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    height: 45px;
+    border-radius: 5px;
+}
+
+.btnVolver {
+    background-color: #dc3545;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #61a1bd;
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1030;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+#btnGenerar, #btnAgregar {
+    background-color: #28a745;
+}
+
+.cabezaAcordeon {
+    background-color: #5cabff;
+    color: #000;
+}
+
+.misTickets {
+    text-align: center;
+}
+
+.tablaTickets {
+    margin: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    margin: 20px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.filter-section .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-section .input-group {
+    max-width: 200px;
+}
+
+.filter-section .form-select {
+    width: auto;
+}
+
+.filter-section .input-group {
+    max-width: 150px;
+}
+
+.filter-section .form-select {
+    width: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-section .input-group,
+    .filter-section .form-select {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+.optAdminCont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.aAdmin{
+text-decoration: none;
+} 
+
+.card {
+    width: 18rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card i {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
