@@ -52,7 +52,7 @@ $(document).ready(function () {
                 if (res.mensaje) {
                     alert(res.mensaje);
                     $("#add-user-form")[0].reset();
-                    cargarUsuarios(); 
+                    cargarUsuarios();
                 } else if (res.error) {
                     alert(res.error);
                 }

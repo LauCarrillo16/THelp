@@ -1,8 +1,10 @@
 <?php
-require_once '../modelo/modeloLogin.php'; 
+require_once '../modelo/modeloLogin.php';
 
-class LoginController {
-    public function login() {
+class LoginController
+{
+    public function login()
+    {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $usuario = $_POST['username'];
             $password = $_POST['password'];

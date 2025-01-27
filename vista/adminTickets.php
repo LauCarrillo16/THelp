@@ -32,8 +32,8 @@
                         <form id="generate-ticket-form" class="row g-3">
                             <div class="col-md-4">
                                 <label for="ticket-subject" class="form-label">Asunto</label>
-                                <input type="text" class="form-control" id="ticket-subject" placeholder="Asunto del ticket"
-                                    required>
+                                <input type="text" class="form-control" id="ticket-subject"
+                                    placeholder="Asunto del ticket" required>
                             </div>
                             <div class="col-md-8">
                                 <label for="ticket-description" class="form-label">Descripción</label>
@@ -87,6 +87,7 @@
         </div>
     </div>
 
+    <script src="../js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

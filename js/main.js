@@ -25,20 +25,20 @@ $(document).ready(function () {
                         `);
                     });
 
-                    $('.btn-editar').on('click', function () {
-                        const id = $(this).data('id');
-                        const nick = $(this).data('nick');
-                        const correo = $(this).data('correo');
-                        const estado = $(this).data('estado');
-                        const password = $(this).data('password');
+                    $(".btn-editar").on("click", function () {
+                        const id = $(this).data("id");
+                        const nick = $(this).data("nick");
+                        const correo = $(this).data("correo");
+                        const estado = $(this).data("estado");
+                        const password = $(this).data("password");
 
-                        $('#edit-user-id').val(id);
-                        $('#edit-user-nick').val(nick);
-                        $('#edit-user-email').val(correo);
-                        $('#edit-user-status').val(estado);
-                        $('#edit-usuario-password').val(password);
+                        $("#edit-user-id").val(id);
+                        $("#edit-user-nick").val(nick);
+                        $("#edit-user-email").val(correo);
+                        $("#edit-user-status").val(estado);
+                        $("#edit-usuario-password").val(password);
 
-                        $('#editUserModal').modal('show');
+                        $("#editUserModal").modal("show");
                     });
                 } catch (e) {
                     console.error("Error al parsear la respuesta:", e);

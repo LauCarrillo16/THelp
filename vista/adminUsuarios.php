@@ -38,8 +38,8 @@
                             </div>
                             <div class="col-md-3">
                                 <label for="user-email" class="form-label">Correo</label>
-                                <input type="email" class="form-control" id="email-usuario" placeholder="Ingresa el correo"
-                                    required>
+                                <input type="email" class="form-control" id="email-usuario"
+                                    placeholder="Ingresa el correo" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="user-role" class="form-label">Rol</label>
@@ -51,8 +51,8 @@
                             </div>
                             <div class="col-md-3">
                                 <label for="user-password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password-usuario" placeholder="Ingresa una contraseña"
-                                    required>
+                                <input type="password" class="form-control" id="password-usuario"
+                                    placeholder="Ingresa una contraseña" required>
                             </div>
                             <div class="col-12 text-end">
                                 <button type="submit" id="btnAgregar" class="btn btn-primary">Agregar Usuario</button>
@@ -85,46 +85,47 @@
     </div>
 
     <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <form id="edit-user-form">
+                    <div class="modal-body">
+                        <input type="hidden" id="edit-user-id">
+                        <div class="mb-3">
+                            <label for="edit-user-nick" class="form-label">Nick</label>
+                            <input type="text" class="form-control" id="edit-user-nick" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-user-email" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="edit-user-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-user-status" class="form-label">Estado</label>
+                            <select class="form-select" id="edit-user-status" required>
+                                <option selected disabled>Selecciona un estado</option>
+                                <option value="Activo">Activo</option>
+                                <option value="Inactivo">Inactivo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-user-password" class="form-label">Nueva Contraseña</label>
+                            <input type="password" class="form-control" id="edit-user-password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                </form>
             </div>
-            <form id="edit-user-form">
-                <div class="modal-body">
-                    <input type="hidden" id="edit-user-id">
-                    <div class="mb-3">
-                        <label for="edit-user-nick" class="form-label">Nick</label>
-                        <input type="text" class="form-control" id="edit-user-nick" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="edit-user-email" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="edit-user-email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="edit-user-status" class="form-label">Estado</label>
-                        <select class="form-select" id="edit-user-status" required>
-                            <option selected disabled>Selecciona un estado</option>
-                            <option value="Activo">Activo</option>
-                            <option value="Inactivo">Inactivo</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="edit-user-password" class="form-label">Nueva Contraseña</label>
-                        <input type="password" class="form-control" id="edit-user-password">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                </div>
-            </form>
         </div>
     </div>
-</div>
 
 
+    <script src="../js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

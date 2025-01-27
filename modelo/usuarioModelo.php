@@ -1,7 +1,8 @@
 <?php
 require_once __DIR__ . '/../config/conexion.php';
 
-function agregarUsuario($nick, $correo, $contraseña, $rol) {
+function agregarUsuario($nick, $correo, $contraseña, $rol)
+{
     $conn = obtenerConexion();
     $contraseñaCifrada = password_hash($contraseña, PASSWORD_DEFAULT);
     $estadoActivo = 1;
@@ -13,7 +14,8 @@ function agregarUsuario($nick, $correo, $contraseña, $rol) {
 }
 
 //Obtener los usuarios
-function obtenerUsuarios() {
+function obtenerUsuarios()
+{
     $conn = obtenerConexion();
 
     $sql = "SELECT u.ID_USUARIO, u.NICK, u.CORREO, ur.DESCRIPCION AS ROL

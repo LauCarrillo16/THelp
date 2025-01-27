@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<div class="container main-container inicio">
+    <div class="container main-container inicio">
         <h1 class="mb-4 tituloInicio">T-Help</h1>
         <div class="row">
             <div class="col-12 col-md-4">

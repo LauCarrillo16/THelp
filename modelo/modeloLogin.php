@@ -1,9 +1,11 @@
 <?php
 require_once '../config/conexion.php';
 
-class UsuarioModel {
+class UsuarioModel
+{
 
-    public function verificarLogin($usuario, $password) {
+    public function verificarLogin($usuario, $password)
+    {
         $conn = obtenerConexion();
 
         $query = 'SELECT * FROM usuario WHERE nick = :usuario LIMIT 1';
